@@ -6,8 +6,8 @@ body {
 }
 
 :root {
-    --main-color: rgb(0, 127, 127);
-    --secondury-color: rgb(230, 255, 255);
+    --main-color: rgb(255, 72, 72);
+    --secondury-color: rgb(255, 243, 243);
 }
 
 p {
@@ -44,15 +44,23 @@ p {
 /* buttons */
 
 .red-button {
-    background-color: var(--main-color);
-    border: none;
-    color: white;
+    background-color: var(--secondury-color);
+    border: 2px solid var(--main-color);
+    color: rgb(0, 0, 0);
     margin: 20px 20px 20px;
     padding: 15px 20px 14px 20px;
     font: 20px sans-serif;
     border-radius: 5px;
     font-size: 20px;
+    font-weight: 500;
+}
+
+.red-button:hover {
     box-shadow: 0px 0px 10px var(--main-color);
+    background-color: var(--main-color);
+    color: rgb(255, 255, 255);
+
+
 }
 
 /* second section */
@@ -87,6 +95,13 @@ p {
     margin: 10px;
     background-color: rgba(234, 234, 234, 0.522);
 }
+
+.unselected-amount:hover {
+    border: 2px solid var(--main-color);
+    background-color: var(--secondury-color);
+    color: var(--main-color);
+}
+
 
 #selected-amount {
     padding: 45px 40px;
@@ -135,6 +150,11 @@ p {
     width: 352px;
     margin: 24px;
 }
+
+.card-common:hover {
+    box-shadow: 0px 0px 10px var(--main-color);
+}
+
 
 .plan-card1 {
     background-color: lightcyan;
@@ -260,8 +280,10 @@ p {
     margin-left: auto;
     text-align: center;
     background-color: var(--main-color);
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+}
+
+#submit-button:hover {
+    box-shadow: 0px 0px 10px var(--main-color);
 }
 
 /* footer */
